@@ -1,6 +1,7 @@
 import pygame
 from constants import SCREEN_WIDTH, SCREEN_HEIGHT
 from logger import log_state
+clock = pygame.time.Clock()
 def main():
     pygame.init()
     print(f"Starting Asteroids with pygame version: {pygame.version.ver}")
@@ -14,7 +15,7 @@ while True:
             pass
 
     screen.fill("black")
-    pygame.displayuv uv.flip()
+    pygame.display.flip()
 
 if __name__ == "__main__":
     main()
