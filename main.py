@@ -7,6 +7,7 @@ from asteroid import Asteroid
 from asteroidfield import AsteroidField
 import asteroidfield
 from circleshape import CircleShape
+from shot import Shot
 
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
@@ -25,6 +26,7 @@ def main():
     player.Player.containers = (updatable, drawable)
     Asteroid.containers = (asteroids, updatable, drawable)
     asteroidfield.AsteroidField.containers = (updatable)
+    Shot.containers = (shots)
     b = asteroidfield.AsteroidField()
     a = player.Player(SCREEN_WIDTH/2, SCREEN_HEIGHT/2)
     while True:
