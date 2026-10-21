@@ -14,7 +14,7 @@ while True:
             pass
 
     screen.fill("black")
-    pygame.display.flip()
+    pygame.displayuv uv.flip()
 
 if __name__ == "__main__":
     main()
