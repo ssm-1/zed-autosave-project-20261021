@@ -38,6 +38,7 @@ def main():
             if CircleShape.collides_with(a, asteroid):
                 log_event("player_hit")
                 print("Game over!")
+                sys.exit()
 
 
         for event in pygame.event.get():
