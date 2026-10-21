@@ -25,6 +25,10 @@ class Asteroid(CircleShape):
 
         log_event("asteroid_split")
         angle = random.uniform(20,50)
-        unit_vector = pygame.Vector2(0, 1)
-        rotated_first_asteroid = unit_vector.rotate(angle)
-        rotated_second_asteroid = unit_vector.rotate(-angle)
+        a1 = self.velocity.rotate(angle)
+        a2 = self.velocity.rotate(-angle)
+        new_radius = self.radius - ASTEROID_MIN_RADIUS
+        first_asteroid = Asteroid(self.position.x, self.position.y, new_radius)
+        second_asteroid = Asteroid(self.position.x, self.position.y, new_radius)
+        first_asteroid.velocity = a1 *1.2
+        second_asteroid.velocity = a2 *1.2
