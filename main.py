@@ -42,7 +42,7 @@ def main():
                 if shot.collides_with(asteroid):
                     log_event("asteroid_shot")
                     asteroid.split()
-                    shot.split()
+                    shot.kill()
             if CircleShape.collides_with(a, asteroid):
                 log_event("player_hit")
                 print("Game over!")
