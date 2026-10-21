@@ -1,0 +1,3 @@
+import circleshape
+
+class Asteroid:
