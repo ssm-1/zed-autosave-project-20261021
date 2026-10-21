@@ -25,7 +25,7 @@ def main():
         updatable.update(dt)
         screen.fill("black")
         for event in pygame.event.get():
-            drawable.draw(screen)
+            a.draw(screen)
             if event.type == pygame.QUIT:
                 return
 
