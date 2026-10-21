@@ -11,6 +11,9 @@ def main():
     print(f"Starting Asteroids with pygame version: {pygame.version}")
     print(f"Screen width: {SCREEN_WIDTH}")
     print(f"Screen height: {SCREEN_HEIGHT}")
+    updatable = pygame.sprite.Group()
+    drawable = pygame.sprite.Group()
+    player.Player.containers = (updatable, drawable)
 
     a = player.Player(SCREEN_WIDTH/2, SCREEN_HEIGHT/2)
     while True:
