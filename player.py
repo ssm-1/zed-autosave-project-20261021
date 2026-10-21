@@ -13,6 +13,7 @@ class Player(CircleShape):
         self.x = x
         self.y = y
         self.rotation = 0
+        self.countdown_timer = 0
 
     # in the Player classuv
     def triangle(
