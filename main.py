@@ -3,6 +3,7 @@ from constants import SCREEN_WIDTH, SCREEN_HEIGHT
 from logger import log_state
 import player
 from asteroid import Asteroid
+from asteroidfield import AsteroidField
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
 def main():
