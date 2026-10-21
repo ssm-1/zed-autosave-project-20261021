@@ -49,6 +49,7 @@ class Player(CircleShape):
             self.rotate(dt)
         if keys[pygame.K_SPACE]:
            self.shoot()
+        self.countdown_timer =- dt
 
     def move(self, dt):
         unit_vector = pygame.Vector2(0, 1)
