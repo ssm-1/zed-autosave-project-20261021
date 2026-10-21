@@ -1,4 +1,4 @@
-from turtle import xcor
+from circleshape import CircleShape
 
 from constants import PLAYER_RADIUS
 
