@@ -38,6 +38,9 @@ def main():
         updatable.update(dt)
         screen.fill("black")
         for asteroid in asteroids:
+            for shot in shots:
+                if shot.collides_with(shot, asteroid):
+                    log_event("asteroid_shot")
             if CircleShape.collides_with(a, asteroid):
                 log_event("player_hit")
                 print("Game over!")
