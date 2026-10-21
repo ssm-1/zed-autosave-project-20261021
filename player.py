@@ -6,8 +6,9 @@ from main import pygame
 
 
 class Player(CircleShape):
-    def __init__(self, x, y):
+    def __init__(self, x, y, radius):
         super().__init__(x, y, radius=self.radius)
+        self.radius = radius
         self.x = x
         self.y = y
         self.rotation = 0
