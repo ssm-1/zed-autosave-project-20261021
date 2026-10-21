@@ -17,6 +17,7 @@ def main():
     while True:
         screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
         log_state()
+        a.update(dt)
         for event in pygame.event.get():
             a.draw(screen)
             if event.type == pygame.QUIT:
