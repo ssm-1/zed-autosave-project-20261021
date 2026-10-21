@@ -41,6 +41,8 @@ def main():
             for shot in shots:
                 if shot.collides_with(shot, asteroid):
                     log_event("asteroid_shot")
+                    asteroid.kill()
+                    shot.kill()
             if CircleShape.collides_with(a, asteroid):
                 log_event("player_hit")
                 print("Game over!")
