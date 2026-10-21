@@ -25,3 +25,6 @@ class Asteroid(CircleShape):
 
         log_event("asteroid_split")
         angle = random.uniform(20,50)
+        unit_vector = pygame.Vector2(0, 1)
+        rotated_first_asteroid = unit_vector.rotate(angle)
+        rotated_second_asteroid = unit_vector.rotate(-angle)
