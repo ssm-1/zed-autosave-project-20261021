@@ -9,7 +9,7 @@ clock.tick(60)
 dt = clock.tick(60)/1000
 def main():
     pygame.init()
-    print(f"Starting Asteroids with pygame version: {pygame.version.ver}")
+    print(f"Starting Asteroids with pygame version: {pygame.version}")
     print(f"Screen width: {SCREEN_WIDTH}")
     print(f"Screen height: {SCREEN_HEIGHT}")
 
