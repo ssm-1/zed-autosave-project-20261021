@@ -8,5 +8,5 @@ class Asteroid(CircleShape):
 
 
     def draw(self, screen: pygame.Surface) -> None:
-        pygame.draw.circle(screen, "white", self.x, self.y, PLAYER_RADIUS, LINE_WIDTH)
+        pygame.draw.circle(screen, "white", self.position, self.radius, LINE_WIDTH)
         pass
